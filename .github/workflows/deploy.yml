@@ -7,9 +7,10 @@ on:
 permissions:
   contents: write
 
-# https://jsonresume.org/themes
 env:
-  THEME: even
+  # 'flat' has a sidebar + main content layout.
+  # It looks professional and exports perfectly to PDF.
+  THEME_NAME: flat
 
 jobs:
   deploy:
@@ -21,21 +22,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: "18" # Standard stable version
 
       - name: Install CLI and Theme
         run: |
           npm install -g resume-cli
-          npm install jsonresume-theme-${{ env.THEME }}
+          npm install jsonresume-theme-${{ env.THEME_NAME }}
 
       - name: Generate HTML
         run: |
-          # This runs the CLI to convert resume.json to index.html using the installed theme
-          npx resume export index.html --theme ${{ env.THEME }}
+          npx resume export index.html --theme ${{ env.THEME_NAME }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-          keep_files: true # Keeps your resume.json available
+          keep_files: true
