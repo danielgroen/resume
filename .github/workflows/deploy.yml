@@ -8,8 +8,9 @@ permissions:
   contents: write
 
 env:
-  # We use the FULL name for both installation and export
-  THEME_NAME: "@jsonresume/jsonresume-theme-consultant-polished"
+  # 'elegant' is stable, widely used, and works with standard tools.
+  THEME_PACKAGE: jsonresume-theme-elegant
+  THEME_NAME: elegant
 
 jobs:
   deploy:
@@ -21,17 +22,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18" # Keeping v18 for better theme compatibility
+          node-version: "18"
 
       - name: Install CLI and Theme
         run: |
           npm install -g resume-cli
-          # Installs the specific scoped theme
-          npm install ${{ env.THEME_NAME }}
+          npm install ${{ env.THEME_PACKAGE }}
 
       - name: Generate HTML
         run: |
-          # IMPORTANT: We pass the FULL package name to --theme
           npx resume export index.html --theme ${{ env.THEME_NAME }}
 
       - name: Deploy to GitHub Pages
