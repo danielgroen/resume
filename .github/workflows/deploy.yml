@@ -1,29 +1,38 @@
-name: Publish Resume to GitHub Pages
+name: Deploy Resume to Pages
 
 on:
   push:
     branches: [main, master]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+permissions:
+  contents: write
 
-      - name: Generate HTML from JSON Resume
-        uses: kelvins/jsonresume-action@v1
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          resume_json_path: "resume.json"
-          theme: "flat" # You can change this to: elegant, paper, kendall, etc.
-          output_html_path: "index.html"
-          output_pdf_path: "resume.pdf"
+          node-version: "20"
+
+      - name: Install CLI and Theme
+        run: |
+          npm install -g resume-cli
+          # You can change 'jsonresume-theme-flat' to any other theme package
+          npm install jsonresume-theme-flat
+
+      - name: Generate HTML
+        run: |
+          # This runs the CLI to convert resume.json to index.html using the installed theme
+          npx resume export index.html --theme flat
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-          keep_files: true # Keeps the original JSON so people can see the source
+          keep_files: true # Keeps your resume.json available
