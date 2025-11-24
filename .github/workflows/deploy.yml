@@ -10,6 +10,7 @@ permissions:
 # https://jsonresume.org/themes
 env:
   THEME: consultant-polished
+  THEME_PACKAGE: "@jsonresume/jsonresume-theme-consultant-polished"
 
 jobs:
   deploy:
@@ -26,7 +27,7 @@ jobs:
       - name: Install CLI and Theme
         run: |
           npm install -g resume-cli
-          npm install jsonresume-theme-${{ env.THEME }}
+          npm i ${{ env.THEME_PACKAGE }}
 
       - name: Generate HTML
         run: |
