@@ -1,0 +1,246 @@
+{
+  "basics": {
+    "name": "Daniël Groen",
+    "label": "Senior React Frontend Engineer • Full Stack TypeScript • Node.js",
+    "image": "",
+    "email": "info@danielgroen.nl",
+    "phone": "",
+    "url": "https://danielgroen.nl",
+    "summary": "Senior React Frontend Engineer met 10+ jaar ervaring. Gespecialiseerd in TypeScript, Node.js en het bouwen van schaalbare applicaties. Ervaring met high-traffic omgevingen (20 miljoen transacties), toegankelijkheid (WCAG) en complexe migraties.",
+    "location": {
+      "address": "Varenstraat 98",
+      "postalCode": "3765 WN",
+      "city": "Soest",
+      "countryCode": "NL",
+      "region": "Utrecht"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "danielgroen",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Payconiq - iDEAL (via Codefield)",
+      "position": "Senior Frontend Developer",
+      "url": "",
+      "startDate": "2022-12-01",
+      "endDate": "",
+      "summary": "Verantwoordelijk voor de frontend van de iDEAL Profielen-tool & Payment tool. Focus op betrouwbaarheid, stabiliteit en accessibility (WCAG).",
+      "highlights": [
+        "In opdracht van Currence (iDEAL) twee applicaties gebouwd voor optimale transactie flow.",
+        "Focus op accessibility volgens WCAG richtlijnen en 24/7 uptime voor 20 miljoen transacties.",
+        "Meedenken over UX/UI en flows in Figma.",
+        "Bouwen van eigen NPM component library met Storybook.",
+        "Unit tests (Vitest), E2E tests (Playwright) en AWS RUM analytics implementatie.",
+        "Stack: React, Redux, TypeScript, Docker, AWS, GitLab CI/CD."
+      ]
+    },
+    {
+      "name": "KPN Amsterdam (via Codefield)",
+      "position": "Senior Frontend Developer",
+      "url": "https://kpn.com/shop/",
+      "startDate": "2022-04-01",
+      "endDate": "2022-12-01",
+      "summary": "Samenvoegen van diverse webshops in één grote Nuxt app (single-shop).",
+      "highlights": [
+        "Samenwerken met c.a. 50 developers aan dezelfde codebase.",
+        "Implementatie van nieuw design en uitfasering verouderd CMS.",
+        "Dynamisch beschikbaar stellen van configs voor verschillende gebruikersgroepen (call-agents, winkelmedewerkers).",
+        "Stack: Nuxt 2, Vue.js (Composition API), Jest, Node.js, Jenkins, AWS."
+      ]
+    },
+    {
+      "name": "Wageningen University & Research (via Codefield)",
+      "position": "Senior Frontend Developer React.JS / Vue.JS",
+      "url": "https://www.groenkennisnet.nl",
+      "startDate": "2020-08-01",
+      "endDate": "2022-04-01",
+      "summary": "Ontwikkeling van een nieuw slim kennisplatform voor de agrarische sector en onderhoud Microsoft Dynamics CRM uitbreidingen.",
+      "highlights": [
+        "Bouwen van een kennisplatform met atom design en Storybook.",
+        "Implementatie van Feature-flags via REST-API voor dynamische functionaliteiten.",
+        "Ontwikkeling van 'Specials': versimpelde, herbruikbare versies van de app.",
+        "Login systeem gebouwd op Auth0 en micro-services in Node.js (PM2).",
+        "Stack: Nuxt 2, Vue.js, React, Kubernetes, Docker, Azure DevOps."
+      ]
+    },
+    {
+      "name": "Codefield",
+      "position": "Senior Frontend React.JS Developer",
+      "url": "",
+      "startDate": "2020-08-01",
+      "endDate": "",
+      "summary": "Codefield is een community van senior developers die elkaar versterken, samen leren en mooie projecten doen bij klanten."
+    },
+    {
+      "name": "Fonkel",
+      "position": "FullStack Developer",
+      "url": "",
+      "startDate": "2016-01-01",
+      "endDate": "2020-08-01",
+      "summary": "Strategisch webbureau. Verantwoordelijk voor fullstack development, DevOps en consultancy.",
+      "highlights": [
+        "Kozijn-Rekentool: Complexe berekeningen, PDF export en database opslag.",
+        "Drupal 8 Fullstack: Frontend, backend, en DevOps voor o.a. GreenNL en Servicehouse.",
+        "DevOps: Bash scripting, Linux server beheer, Docker optimalisatie, Nginx configuratie.",
+        "Stack: Vue.js, TypeScript, Drupal 8, PHP, Express.js, Docker, Linux."
+      ]
+    },
+    {
+      "name": "Occhio",
+      "position": "Front-end Developer (Intern)",
+      "startDate": "2015-09-01",
+      "endDate": "2016-02-01",
+      "summary": "WordPress en JavaScript development."
+    },
+    {
+      "name": "Q&A Research & Consultancy",
+      "position": "Front-end Developer (Intern)",
+      "startDate": "2014-04-01",
+      "endDate": "2015-01-01"
+    },
+    {
+      "name": "Smulders Audiovisueel",
+      "position": "Visual Designer",
+      "startDate": "2011-02-01",
+      "endDate": "2012-01-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Hogeschool van Amsterdam",
+      "url": "",
+      "area": "Communications and multimedia design",
+      "studyType": "Bachelor HBO",
+      "startDate": "2012-01-01",
+      "endDate": "2016-01-01",
+      "score": "Diploma behaald"
+    },
+    {
+      "institution": "Grafisch Lyceum Utrecht",
+      "url": "",
+      "area": "Audio & Visuele vormgeving",
+      "studyType": "MBO niveau IV",
+      "startDate": "2008-01-01",
+      "endDate": "2012-01-01",
+      "score": "Diploma behaald"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "WCAG voor Developers & EN 301 549",
+      "date": "2024-01-01",
+      "issuer": "Digitaal Toegankelijk"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "date": "2022-01-01",
+      "issuer": "AWS"
+    },
+    {
+      "name": "Webpack 4 Fundamentals & Plugins System",
+      "date": "2022-01-01",
+      "issuer": "Frontend Masters"
+    },
+    {
+      "name": "AWS for Front-End Engineers",
+      "date": "2022-01-01",
+      "issuer": "Frontend Masters"
+    },
+    {
+      "name": "Advanced JavaScript & TypeScript Courses",
+      "date": "2021-01-01",
+      "issuer": "Frontend Masters",
+      "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "Senior",
+      "keywords": [
+        "React.js",
+        "Next.js 13+",
+        "TypeScript",
+        "Redux",
+        "Vue.js 2 & 3",
+        "Nuxt 2 & 3",
+        "HTML5",
+        "(S)CSS / Sass",
+        "Tailwind",
+        "Material-UI",
+        "Storybook",
+        "Figma",
+        "WCAG 2.1"
+      ]
+    },
+    {
+      "name": "Backend",
+      "level": "Medior",
+      "keywords": [
+        "Node.js",
+        "Express",
+        "Directus",
+        "MySQL / MariaDB",
+        "PHP",
+        "Symfony",
+        "Drupal",
+        "Redis",
+        "Solidity"
+      ]
+    },
+    {
+      "name": "DevOps & Cloud",
+      "level": "Medior",
+      "keywords": [
+        "AWS",
+        "Kubernetes",
+        "Docker",
+        "CI/CD Pipelines",
+        "Bash scripting",
+        "Azure DevOps",
+        "Traefik",
+        "Linux (Debian/Ubuntu)",
+        "Nginx"
+      ]
+    },
+    {
+      "name": "Testing",
+      "level": "Senior",
+      "keywords": [
+        "Cypress",
+        "Jest",
+        "Vitest",
+        "Playwright"
+      ]
+    },
+    {
+      "name": "Tools & Flow",
+      "level": "",
+      "keywords": [
+        "Git",
+        "Agile / Scrum",
+        "Jira",
+        "Webpack / Turbopack",
+        "OTAP"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Tradingwebhookz (Eigen Project)",
+      "description": "Algorithmic trading tools, optimalisatie en automatisering.",
+      "url": "https://tradingwebhookz.com",
+      "highlights": [
+        "Optimizer: Electron-applicatie voor het vinden van optimale strategie-settings via randomisatie.",
+        "Incubator: Electron-app voor real-time validatie van strategieën (90 dagen observatie).",
+        "Webhook System: Zet TradingView alerts om naar daadwerkelijke orders op exchanges (Bybit, KuCoin, etc.).",
+        "Stack: Next.js, Electron, Node.js, SQLite, Drizzle ORM, Docker, GitHub Actions."
+      ]
+    }
+  ]
+}
