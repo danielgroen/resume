@@ -7,10 +7,10 @@ on:
 permissions:
   contents: write
 
+# https://jsonresume.org/themes
 env:
-  # 'elegant' is stable, widely used, and works with standard tools.
-  THEME_PACKAGE: jsonresume-theme-elegant
-  THEME_NAME: elegant
+  THEME_PACKAGE: jsonresume-theme-actual
+  THEME_NAME: actual
 
 jobs:
   deploy:
