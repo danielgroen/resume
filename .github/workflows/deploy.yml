@@ -9,8 +9,8 @@ permissions:
 
 # https://jsonresume.org/themes
 env:
-  THEME_PACKAGE: jsonresume-theme-actual
-  THEME_NAME: actual
+  THEME_PACKAGE: jsonresume-theme-even
+  THEME_NAME: even
 
 jobs:
   deploy:
