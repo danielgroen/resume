@@ -7,6 +7,10 @@ on:
 permissions:
   contents: write
 
+# https://jsonresume.org/themes
+env:
+  THEME: even
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -22,13 +26,12 @@ jobs:
       - name: Install CLI and Theme
         run: |
           npm install -g resume-cli
-          # You can change 'jsonresume-theme-flat' to any other theme package
-          npm install jsonresume-theme-flat
+          npm install jsonresume-theme-${{ env.THEME }}
 
       - name: Generate HTML
         run: |
           # This runs the CLI to convert resume.json to index.html using the installed theme
-          npx resume export index.html --theme flat
+          npx resume export index.html --theme ${{ env.THEME }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
