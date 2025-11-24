@@ -19,6 +19,11 @@
         "network": "LinkedIn",
         "username": "danielgroen",
         "url": "https://www.linkedin.com/in/danielgroen/"
+      },
+      {
+        "network": "GitHub",
+        "username": "danielgroen",
+        "url": "https://github.com/danielgroen"
       }
     ]
   },
